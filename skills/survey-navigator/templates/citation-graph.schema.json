@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Survey Navigator Citation Graph",
+  "type": "object",
+  "required": ["survey", "nodes", "edges"],
+  "properties": {
+    "survey": {
+      "type": "object",
+      "required": ["title", "source_type"],
+      "properties": {
+        "title": { "type": "string" },
+        "source_type": {
+          "type": "string",
+          "enum": ["pdf", "markdown", "doi", "arxiv", "url", "zotero-item", "zotero-collection"]
+        },
+        "source_locator": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "node_type"],
+        "properties": {
+          "id": { "type": "string" },
+          "label": { "type": "string" },
+          "node_type": {
+            "type": "string",
+            "enum": ["survey", "paper", "taxonomy", "method", "system", "benchmark", "application", "open-problem"]
+          },
+          "year": { "type": ["integer", "string", "null"] },
+          "venue": { "type": ["string", "null"] },
+          "doi": { "type": ["string", "null"] },
+          "arxiv": { "type": ["string", "null"] },
+          "url": { "type": ["string", "null"] },
+          "role_labels": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["foundational", "representative", "recent", "method", "system", "benchmark"]
+            }
+          },
+          "priority": {
+            "type": ["string", "null"],
+            "enum": ["must-read", "optional", null]
+          },
+          "metadata_status": {
+            "type": "string",
+            "enum": ["complete", "partial", "unknown-heavy"]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source", "target", "relation"],
+        "properties": {
+          "source": { "type": "string" },
+          "target": { "type": "string" },
+          "relation": {
+            "type": "string",
+            "enum": ["cites", "belongs-to-taxonomy", "supports-application", "benchmarked-by", "contrasts-with", "motivates"]
+          },
+          "confidence": {
+            "type": "string",
+            "enum": ["source-grounded", "assistant-inferred", "uncertain"]
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

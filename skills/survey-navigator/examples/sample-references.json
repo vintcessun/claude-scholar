@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Attention Is All You Need",
+    "authors": "Ashish Vaswani; Noam Shazeer; Niki Parmar",
+    "year": "2017",
+    "doi": "10.48550/arXiv.1706.03762",
+    "arxiv": ""
+  },
+  {
+    "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    "authors": "Jacob Devlin; Ming-Wei Chang; Kenton Lee; Kristina Toutanova",
+    "year": "2018",
+    "doi": "",
+    "arxiv": "1810.04805"
+  },
+  {
+    "title": "Language Models are Few-Shot Learners",
+    "authors": "",
+    "year": "2020",
+    "doi": "",
+    "arxiv": ""
+  },
+  {
+    "title": "Totally Fabricated Survey Title for Codex Failure Testing 2099",
+    "authors": "Imaginary Author",
+    "year": "2099",
+    "doi": "",
+    "arxiv": ""
+  }
+]

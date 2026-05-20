@@ -1,0 +1,112 @@
+[
+  {
+    "title": "Graph-based Agent Memory: Taxonomy, Techniques, and Applications",
+    "authors": "unknown",
+    "year": "unknown",
+    "venue": "unknown",
+    "doi": "unknown",
+    "arxiv": "unknown",
+    "url": "unknown",
+    "reference_provenance": "structure-only survey object from repo example; not a verified full citation"
+  },
+  {
+    "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+    "authors": "unknown",
+    "year": "2023",
+    "venue": "unknown",
+    "doi": "unknown",
+    "arxiv": "unknown",
+    "url": "unknown",
+    "reference_provenance": "structure-only candidate reference; not verified against the survey bibliography"
+  },
+  {
+    "title": "MemoryBank: Enhancing Large Language Models with Long-Term Memory",
+    "authors": "unknown",
+    "year": "2023",
+    "venue": "unknown",
+    "doi": "unknown",
+    "arxiv": "unknown",
+    "url": "unknown",
+    "reference_provenance": "structure-only candidate reference; not verified against the survey bibliography"
+  },
+  {
+    "title": "LONGMEM: Augmenting Large Language Models with Long-Term Memory",
+    "authors": "unknown",
+    "year": "2023",
+    "venue": "unknown",
+    "doi": "unknown",
+    "arxiv": "unknown",
+    "url": "unknown",
+    "reference_provenance": "structure-only candidate reference; not verified against the survey bibliography"
+  },
+  {
+    "title": "MemGPT: Towards LLMs as Operating Systems",
+    "authors": "unknown",
+    "year": "2023",
+    "venue": "unknown",
+    "doi": "unknown",
+    "arxiv": "unknown",
+    "url": "unknown",
+    "reference_provenance": "structure-only candidate reference; not verified against the survey bibliography"
+  },
+  {
+    "title": "HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models",
+    "authors": "unknown",
+    "year": "2024",
+    "venue": "unknown",
+    "doi": "unknown",
+    "arxiv": "unknown",
+    "url": "unknown",
+    "reference_provenance": "structure-only candidate reference; not verified against the survey bibliography"
+  },
+  {
+    "title": "GraphReader: Building Graph-based Agent to Enhance Long-Context Abilities of Large Language Models",
+    "authors": "unknown",
+    "year": "2024",
+    "venue": "unknown",
+    "doi": "unknown",
+    "arxiv": "unknown",
+    "url": "unknown",
+    "reference_provenance": "structure-only candidate reference; not verified against the survey bibliography"
+  },
+  {
+    "title": "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval",
+    "authors": "unknown",
+    "year": "2024",
+    "venue": "unknown",
+    "doi": "unknown",
+    "arxiv": "unknown",
+    "url": "unknown",
+    "reference_provenance": "structure-only candidate reference; not verified against the survey bibliography"
+  },
+  {
+    "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+    "authors": "unknown",
+    "year": "2023",
+    "venue": "unknown",
+    "doi": "unknown",
+    "arxiv": "unknown",
+    "url": "unknown",
+    "reference_provenance": "structure-only candidate reference; not verified against the survey bibliography"
+  },
+  {
+    "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+    "authors": "unknown",
+    "year": "2022",
+    "venue": "unknown",
+    "doi": "unknown",
+    "arxiv": "unknown",
+    "url": "unknown",
+    "reference_provenance": "structure-only candidate reference; not verified against the survey bibliography"
+  },
+  {
+    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "authors": "unknown",
+    "year": "2020",
+    "venue": "unknown",
+    "doi": "unknown",
+    "arxiv": "unknown",
+    "url": "unknown",
+    "reference_provenance": "structure-only candidate reference; not verified against the survey bibliography"
+  }
+]

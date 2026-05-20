@@ -1,0 +1,50 @@
+{
+  "resolver": "semantic_scholar",
+  "api_key_used": false,
+  "request_fields": [
+    "title",
+    "authors",
+    "year",
+    "venue",
+    "abstract",
+    "citationCount",
+    "influentialCitationCount",
+    "externalIds",
+    "url",
+    "openAccessPdf",
+    "fieldsOfStudy"
+  ],
+  "generated_at_epoch": 0,
+  "records": [
+    {
+      "title": "Attention Is All You Need",
+      "authors": "Ashish Vaswani; Noam Shazeer; Niki Parmar",
+      "year": "2017",
+      "doi": "10.48550/arXiv.1706.03762",
+      "arxiv": "",
+      "original_reference": {
+        "title": "Attention Is All You Need",
+        "authors": "Ashish Vaswani; Noam Shazeer; Niki Parmar",
+        "year": "2017",
+        "doi": "10.48550/arXiv.1706.03762",
+        "arxiv": ""
+      },
+      "enriched_metadata": {
+        "title": "unknown",
+        "authors": "unknown",
+        "year": "unknown",
+        "venue": "unknown",
+        "abstract": "unknown",
+        "citationCount": "unknown",
+        "influentialCitationCount": "unknown",
+        "externalIds": "unknown",
+        "url": "unknown",
+        "openAccessPdf": "unknown",
+        "fieldsOfStudy": "unknown"
+      },
+      "enrichment_status": "skipped",
+      "enrichment_source": "manual",
+      "confidence_note": "Example structure only. Real values depend on a live Semantic Scholar API run."
+    }
+  ]
+}

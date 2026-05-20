@@ -292,11 +292,13 @@ cp /tmp/claude-scholar/AGENTS.zh-CN.md ~/.codex/AGENTS.zh-CN.md
 | 类型 | 名字 | 一句话解释 |
 |---|---|---|
 | Skill | `research-ideation` | 把模糊主题转成结构化问题、研究空白分析和初步研究计划。 |
+| Skill | `survey-navigator` | 从一篇 survey / review 出发，整理领域 taxonomy、引用论文分诊、阅读路线，以及 Zotero / Obsidian 组织计划。 |
 | Agent | `literature-reviewer` | 搜索、分类并综合论文，形成可执行的文献图景。 |
 | Skill | `zotero-obsidian-bridge` | 将 Zotero 文献集合衔接到详细论文笔记和后续 Obsidian 知识库工作流。 |
 
 **工作方式**
 - **5W1H 头脑风暴**：把模糊兴趣收敛成结构化问题。
+- **Survey-first 领域导航**：从一篇 survey、review、tutorial 或 position paper 出发，先抽取领域结构、taxonomy 和优先阅读路线。
 - **文献检索与导入**：搜索论文、提取 DOI/arXiv/URL、导入 Zotero，并组织到主题文献集合。
 - **PDF 与全文**：能挂 PDF 就挂 PDF，能读全文就读全文。
 - **研究空白分析**：识别文献、方法、应用、跨学科和时间维度的研究空白。

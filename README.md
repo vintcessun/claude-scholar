@@ -292,11 +292,13 @@ Turn a vague topic into a structured research direction with literature support.
 | Type | Name | One-line explanation |
 |---|---|---|
 | Skill | `research-ideation` | Turns a vague topic into structured questions, gap analysis, and an initial research plan. |
+| Skill | `survey-navigator` | Starts from one survey or review paper and turns it into a taxonomy, cited-paper triage, reading roadmap, and Zotero/Obsidian organization plan. |
 | Agent | `literature-reviewer` | Searches, classifies, and synthesizes papers into an actionable literature picture. |
 | Skill | `zotero-obsidian-bridge` | Bridges Zotero collections into detailed paper notes and downstream Obsidian knowledge work. |
 
 **How it works**
 - **5W1H brainstorming**: turn vague interests into structured questions.
+- **Survey-first field mapping**: start from one survey, review, tutorial, or position paper to extract a field structure, taxonomy, and prioritized reading route.
 - **Literature search and import**: find papers, extract DOI/arXiv/URL, import them into Zotero, and organize them into themed collections.
 - **PDF and full text**: attach PDFs when available and read full text when possible.
 - **Gap analysis**: identify literature, methodological, application, interdisciplinary, and temporal gaps.
