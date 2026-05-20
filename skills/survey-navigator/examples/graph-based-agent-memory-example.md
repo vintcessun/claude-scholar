@@ -7,16 +7,36 @@ Use $survey-navigator on the survey "Graph-based Agent Memory: Taxonomy, Techniq
 
 I want:
 1. a field map,
-2. a taxonomy of the cited papers,
-3. a reading roadmap for beginner / research / engineering tracks,
-4. a Zotero import plan,
-5. an Obsidian export plan.
+2. a conservative `reference-list.json`,
+3. a taxonomy of the cited papers,
+4. a `citation-lineage.md` that reads like a related-work evolution map,
+5. citation contexts as a machine-readable intermediate artifact,
+6. a Zotero import plan,
+7. an Obsidian export plan,
+8. a reading roadmap for beginner / research / engineering tracks.
 
 Do not fabricate citation metadata. If any field is missing from the survey or reference list, mark it as unknown.
 Keep the output human-in-the-loop and make the uncertainty visible.
+Do not pretend Zotero import or Obsidian write-back already happened.
 ```
 
 ## Expected output structure
+
+### `reference-list.json`
+
+```json
+[
+  {
+    "title": "Example paper A",
+    "authors": "unknown",
+    "year": "2024",
+    "venue": "arXiv",
+    "doi": "unknown",
+    "arxiv": "2401.xxxxx",
+    "url": "unknown"
+  }
+]
+```
 
 ### `survey-map.md`
 
@@ -85,6 +105,37 @@ Keep the output human-in-the-loop and make the uncertainty visible.
 - Compare benchmark setup, memory cost, and failure modes before building.
 ```
 
+### `citation-lineage.md`
+
+```md
+# Citation Lineage
+
+## 1. Foundational Papers
+- Problem addressed: define why memory matters for LLM agents before graph-specific design.
+- Relation to previous stage: starting point.
+- Representative papers:
+  - [8] Cognitive architectures for language agents — frames memory as part of the broader agent architecture.
+
+## 2. Structural Memory
+- Problem addressed: move from flat memory views toward explicit structure.
+- Relation to previous stage: extends foundational agent-memory ideas into more organized representations.
+- Representative papers:
+  - [20] On the structural memory of llm agents — clarifies why structured memory is not just storage.
+
+## 3. Graph Memory
+- Problem addressed: represent relations, time, and hierarchy in memory.
+- Relation to previous stage: specializes structural memory into graph-oriented formulations.
+- Representative papers:
+  - [18] Zep: a temporal knowledge graph architecture for agent memory — representative temporal graph direction.
+
+## 4. Retrieval / Reasoning
+- Problem addressed: make stored memory usable for recall and long-horizon reasoning.
+- Relation to previous stage: turns graph memory from representation into operational support.
+- Representative papers:
+  - [17] Hierarchical memory for high-efficiency long-term reasoning in llm agents
+  - [35] SGMem: Sentence graph memory for long-term conversational agents
+```
+
 ### `zotero-import-plan.md`
 
 ```md
@@ -103,6 +154,19 @@ Keep the output human-in-the-loop and make the uncertainty visible.
 | Title | Identifier type | Identifier | Proposed collection | Tags | Import status | Notes |
 |---|---|---|---|---|---|---|
 | Graph-based Agent Memory: Taxonomy, Techniques, and Applications | url | unknown | Core Papers | survey; graph-memory; must-read | pending | create source note first |
+```
+
+### `citation_contexts.json`
+
+```json
+[
+  {
+    "citation_number": 18,
+    "section": "I. INTRODUCTION",
+    "subsection": "unknown",
+    "surrounding_text": "..."
+  }
+]
 ```
 
 ### `obsidian-export-plan.md`
@@ -127,3 +191,7 @@ Keep the output human-in-the-loop and make the uncertainty visible.
 - It demonstrates format and workflow shape.
 - It does not claim the real survey has already been fully parsed.
 - It keeps missing metadata visible instead of guessed.
+
+## Example artifact
+
+See [graph-based-agent-memory-citation-lineage.md](./graph-based-agent-memory-citation-lineage.md) for a compact related-work evolution example based on the current Graph-based Agent Memory survey workflow.

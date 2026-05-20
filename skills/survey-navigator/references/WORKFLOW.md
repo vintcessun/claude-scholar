@@ -17,6 +17,9 @@ Record:
 - access quality: full text | partial text | abstract-only | reference-list-only
 - downstream constraint: dry-run | planning-only | Zotero-write allowed | Obsidian-write allowed
 
+Activation rule:
+- if the user asks for a survey summary, taxonomy, cited-paper organization, reading roadmap, literature整理, or Zotero/Obsidian planning around one survey-like paper, use `survey-navigator` first even if the skill name is not mentioned
+
 ## 2. Build the survey map
 
 The minimum survey map should capture:
@@ -53,6 +56,43 @@ Rules:
 - if the source does not provide a field, write `unknown`
 - if the survey uses abbreviated citations and the full metadata is unavailable, keep the record partial
 - do not upgrade partial records into fully specified citations without evidence
+- emit `reference-list.json` by default unless the user explicitly asks for another format
+
+## 3.5 Capture citation lineage or citation contexts
+
+Preferred outputs:
+- `citation_contexts.json` when citation markers can be linked to section or subsection context
+- `citation-lineage.md` when the linkage must be summarized manually
+
+Rules:
+- if linking is partial, keep the partial result
+- if linking is impossible from the current source, say so explicitly
+- do not pretend citation lineage was completed if no grounded link could be produced
+
+Interpretation:
+- `citation_contexts.json` is the machine-oriented intermediate artifact
+- `citation-lineage.md` is the human-readable related-work artifact
+
+## 3.6 Build the related-work evolution layer
+
+After `citation_contexts.json` and `paper-triage-table.md` exist, build a compact evolution view:
+
+- foundational papers
+- structural memory
+- graph memory
+- retrieval / reasoning
+- reflective / evolutionary memory
+- benchmarks
+- applications
+- open problems
+
+For each line:
+- list representative papers conservatively
+- write one sentence for `what problem this line solves`
+- write one sentence for `how this line relates to the previous stage`
+
+This step should stay Markdown-first and review-oriented.
+Do not turn it into a heavy graph system or database schema.
 
 ## 4. Triage papers by role and reading value
 
@@ -97,6 +137,10 @@ Create three routes:
 - favor systems, benchmarks, implementation-heavy papers, or reproducible artifacts
 - highlight practical takeaways, tooling assumptions, and deployment constraints
 
+Relationship to citation lineage:
+- `citation-lineage.md` explains how the field evolved
+- `reading-roadmap.md` explains what the reader should read next for a concrete goal
+
 ## 6. Make the Zotero plan
 
 When Zotero MCP is available:
@@ -135,3 +179,22 @@ Do not:
 - create extra canvases by default
 - promote weak references into stable knowledge
 - pretend abstract-only records support durable claims
+- pretend any actual Obsidian write-back happened unless the current run verified it
+
+## Default output package
+
+Unless the user explicitly narrows the scope, the default package should include:
+
+- `survey-map.md`
+- `reference-list.json`
+- `paper-triage-table.md`
+- `citation-lineage.md`
+- `citation_contexts.json` when source quality allows
+- `reading-roadmap.md`
+- `zotero-import-plan.md`
+- `obsidian-export-plan.md`
+
+Optional:
+
+- `enriched-reference-table.md`
+- `citation-graph.json`
